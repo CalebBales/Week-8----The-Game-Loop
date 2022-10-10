@@ -25,8 +25,10 @@ public class MoveThenStop : MonoBehaviour
         
         if (Vector3.Distance(transform.position, destination) < .1f)
         {
+            return;
         }
 
-        return;
+        // Moved this return line into the if statment made the loop an actual loop so the cube moves.
+        //return;
     }
 }

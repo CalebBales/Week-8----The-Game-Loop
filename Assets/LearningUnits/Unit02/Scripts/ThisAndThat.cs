@@ -31,14 +31,14 @@ public class ThisAndThat : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //if (other.gameObject something something)
-        //{
+        // if (other.gameObject something something)
+        // {
         //    isBlueCubeDeteced = true;
-        //}
+        // }
 
-        //if (other.gameObject something something)
-        //{
+        // if (other.gameObject something something)
+        // {
         //    isRedCubeDetected = true;
-        //}
+        // }
     }
 }
