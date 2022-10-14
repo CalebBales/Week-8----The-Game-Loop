@@ -41,10 +41,12 @@ public class MoveBackAndForth : MonoBehaviour
         // NOTE: Uncomment the four code lines below, and change what is inside the "if statement" to make this work
         // You should NOT write any new lines of code-- just change what is inside the "if statement"
 
-        //if (Something...)
-        //{
-        //    moveSpeed = -moveSpeed;
-        //}
+        // Because LERP amounts of 0 and 1 indicate start and end positions respectivelly, checking if the moveAmount is greater/less or equal to them
+        // allows the script to continuous flip the movement values from negative to positive infinitely.
+        if (moveAmount >= 1 || moveAmount <= 0)
+        {
+           moveSpeed = -moveSpeed;
+        }
 
 
     }

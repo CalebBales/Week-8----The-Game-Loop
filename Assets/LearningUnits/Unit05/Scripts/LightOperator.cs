@@ -21,11 +21,15 @@ public class LightOperator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if...
-        pointLight.enabled = true;
+        // Checked for redCube being in the trigger and used a negate for if blueCube is in the trigger so evaluates to true if blueCube is not inside
+        // Then the else just makes sure it stays turned off otherwise
+        if (isRedCubeDetected && !isBlueCubeDeteced){
+            pointLight.enabled = true;
+        }
 
-        // else
-        pointLight.enabled = false;
+        else{
+            pointLight.enabled = false;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
